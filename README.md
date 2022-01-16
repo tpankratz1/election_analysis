@@ -23,7 +23,7 @@ Several Colorado Board of Elections employees, Tom and Seth, requested an electi
 
   ![Code example of how county data was obtained.](./Resources/county_breakdown.png)
 
-- **County with the largest number of votes?**
+- **County with the largest number of votes:**
   - Denver
 - **Number of votes and the percentage of the total votes for each candidate:**
   - Charles Casper Stockham: 23.0% (85,213)
