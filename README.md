@@ -21,7 +21,7 @@ Several Colorado Board of Elections employees, Tom and Seth, requested an electi
   
   The following code example shows how the count-controlled **for** loop was written to capture the county vote and percentage totals.
 
-  ![Code example of how county data was obtained.](./resources/county_breakdown.png)
+  ![Code example of how county data was obtained.](./Resources/county_breakdown.png)
 
 - **County with the largest number of votes?**
   - Denver
@@ -32,7 +32,7 @@ Several Colorado Board of Elections employees, Tom and Seth, requested an electi
 
   The following code example shows how the count-controlled **for** loop was written to capture the candidate vote and percentage totals.
 
-  ![Code example of how candidate data was obtained.](./resources/candidate_breakdown.png)
+  ![Code example of how candidate data was obtained.](./Resources/candidate_breakdown.png)
 
 - **Candidate who won the election, what their vote count was, and what their percentage of the total votes was:**
   - Winner: Diana DeGette
@@ -42,9 +42,9 @@ Several Colorado Board of Elections employees, Tom and Seth, requested an electi
 ## Election Audit Summary
 This script, written to analyze election results and provide deeper insights, has been shown to be effective and scalable. We recommend it be used for other elections. With some simple modifications of the code, it would be a powerful tool to analyze results for an election with any number of candidates or any number of counties, cities, states or other types of regions. Here are several examples of how the code allows for scalability:
 1. **The ability to analyze any number of counties or other types of regions, whether that's 3 or 300:** The code is written in a way that allows for more counties to be included. The example below illustrates this: 
-![Code example of how counties or regions can be added.](./resources/add_counties.png)
+![Code example of how counties or regions can be added.](./Resources/add_counties.png)
 
 2. **The ability to analyze data from any number of column categories, in addition to the existing *Ballot ID*, *County* and *Candidate* categories:** The code is written in a way that allows for scalability. The example below illustrates this, showing how additional categories can be added to *Ballot ID*, *County* and *Candidate*, such as *City* or *State*.
-![Code example of how additional categories can be added.](./resources/add_data_columns.png)
+![Code example of how additional categories can be added.](./Resources/add_data_columns.png)
 
 
