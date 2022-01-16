@@ -1,6 +1,6 @@
 # Election Analysis
 
-## Overview
+## Overview of Election Audit
 Several Colorado Board of Elections employees, Tom and Seth, requested an election audit to be conducted of the voting results data from a recent local congressional election. The following tasks were asked to be performed:
 
 - Determine how many votes were cast in the congressional election.
