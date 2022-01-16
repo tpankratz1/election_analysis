@@ -96,8 +96,7 @@ with open(file_to_save, "w") as txt_file:
     for county_name in county_votes:
         
         # 6b: Retrieve the county vote count.
-        total_county_votes = county_votes[county_name]
-        
+        total_county_votes = county_votes[county_name]        
         # 6c: Calculate the percentage of votes for the county.
         county_vote_percentage = float(total_county_votes) / float(total_votes) * 100
         county_results = (

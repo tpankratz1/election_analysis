@@ -1,32 +1,50 @@
 # Election Analysis
 
-# Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+## Overview
+Several Colorado Board of Elections employees, Tom and Seth, requested an election audit to be conducted of the voting results data from a recent local congressional election. The following tasks were asked to be performed:
 
-1. Calculate the total number of votes cast.
-2. Get a complete list of candidates who received votes.
-3. Calculate the total number of votes each candidate received.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the election based on popular vote.
+- Determine how many votes were cast in the congressional election.
+- Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
+- Uncover which county had the largest number of votes.
+- Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
+- Show which candidate won the election, what their vote count was, and what their percentage of the total votes was.
 
-## Resources
-- Data Source: election_results.csv
-- Software: Python 3.7.6, Visual Studio Code, 1.63.2
 
-## Summary
-The analysis of the election show that:
-- There were 369,711 votes cast in the election
-- The candidates were:
-  - Charles Casper Stockham
-  - Diana DeGette
-  - Raymon Anthony Doane
-The candidate results were:
-  - Charles Casper Stockham received 23.0% of the vote and 85,213 votes.
-  - Diana DeGette received 73.8% of the vote and 272,892 votes.
-  - Raymon Anthony Doane received 3.1% of the vote and 11,606 votes.
-- The winner of the election was:
-  - Diana DeGette, who received 73.8% of the vote and 272,892 votes.
+## Election Audit Results
+- **Total votes cast in the congressional election:** 
+  - There were 369,711 total votest cast in the election 
 
-## Challenge Overview
+- **Number of votes and the percentage of total votes for each county in the precinct:** 
+  - Jefferson: 10.5% (38,855)
+  - Denver: 82.8% (306,055)
+  - Arapahoe: 6.7% (24,801)
+  
+  The following code example shows how the count-controlled **for** loop was written to capture the county vote and percentage totals.
 
-## Challenge Summary
+  ![Code example of how county data was obtained.](./resources/county_breakdown.png)
+
+- **County with the largest number of votes?**
+  - Denver
+- **Number of votes and the percentage of the total votes for each candidate:**
+  - Charles Casper Stockham: 23.0% (85,213)
+  - Diana DeGette: 73.8% (272,892)
+  - Raymon Anthony Doane: 3.1% (11,606)
+
+  The following code example shows how the count-controlled **for** loop was written to capture the candidate vote and percentage totals.
+
+  ![Code example of how candidate data was obtained.](./resources/candidate_breakdown.png)
+
+- **Candidate who won the election, what their vote count was, and what their percentage of the total votes was:**
+  - Winner: Diana DeGette
+  - Winning Vote Count: 272,892
+  - Winning Percentage: 73.8%
+
+## Election Audit Summary
+This script, written to analyze election results and provide deeper insights, has been shown to be effective and scalable. We recommend it be used for other elections. With some simple modifications of the code, it would be a powerful tool to analyze results for an election with any number of candidates or any number of counties, cities, states or other types of regions. Here are several examples of how the code allows for scalability:
+1. **The ability to analyze any number of counties or other types of regions, whether that's 3 or 300:** The code is written in a way that allows for more counties to be included. The example below illustrates this: 
+![Code example of how counties or regions can be added.](./resources/add_counties.png)
+
+2. **The ability to analyze data from any number of column categories, in addition to the existing *Ballot ID*, *County* and *Candidate* categories:** The code is written in a way that allows for scalability. The example below illustrates this, showing how additional categories can be added to *Ballot ID*, *County* and *Candidate*, such as *City* or *State*.
+![Code example of how additional categories can be added.](./resources/add_data_columns.png)
+
+
